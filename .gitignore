@@ -3,5 +3,7 @@
 Library/
 Logs/
 *.csproj
+*.sln
 Temp/
 UserSettings/
+*.sln
