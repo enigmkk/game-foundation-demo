@@ -1,0 +1,21 @@
+{
+  "name": "com.astra.foundation",
+  "version": "1.0.0",
+  "displayName": "foundation",
+  "description": "Universal foundation for game projects, including support for cross-platform libraries.",
+  "unity": "2019.4",
+  "author": {
+    "name": "astra",
+    "url": "https://astra.com"
+  },
+  "keywords": [
+    "device id",
+    "ios",
+    "idfa",
+    "idfv",
+    "ATT",
+    "android",
+    "gaid",
+    "native"
+  ]
+}
