@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "6b653a1d2b085752650c5223d0fa3126b56fdc13"
+      "hash": "ac538a0b0a3efcbf912d934725f65f83c013e77f"
     },
     "com.astra.network-monitor": {
       "version": "https://github.com/enigmkk/network-monitor.git",
