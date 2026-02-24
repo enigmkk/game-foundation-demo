@@ -6,22 +6,22 @@ import android.os.Build;
 
 public class FoundationBridge {
     private static Context m_context;
-    public static void start()
+    public static void start(Context context)
     {
-        m_context = getContext();
+        m_context = context;
     }
     
-    private static Context getContext() 
-    {
-        try 
-        {
-            Class<?> unityPlayer = Class.forName("com.unity3d.player.UnityPlayer");
-            return (Context) unityPlayer.getField("currentActivity").get(null);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
+    // private static Context getContext() 
+    // {
+    //     try 
+    //     {
+    //         Class<?> unityPlayer = Class.forName("com.unity3d.player.UnityPlayer");
+    //         return (Context) unityPlayer.getField("currentActivity").get(null);
+    //     } catch (Exception e) {
+    //         e.printStackTrace();
+    //         return null;
+    //     }
+    // }
     public static String getVersionCode()
     {
         try

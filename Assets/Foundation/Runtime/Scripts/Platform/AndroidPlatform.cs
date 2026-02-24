@@ -34,7 +34,11 @@ namespace Astra.Foundation
         {
             base.Initialize();
             m_foundationBridge = new AndroidJavaClass("com.astra.foundation.FoundationBridge");
-            m_foundationBridge.CallStatic("start");
+            using (var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+            {
+                var activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+                m_foundationBridge.CallStatic("start", activity);
+            }
             VersionCode = m_foundationBridge.CallStatic<string>("getVersionCode");
         }
         private string m_internalPath = null;
